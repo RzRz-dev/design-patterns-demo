@@ -93,6 +93,3 @@ The examples prioritize **clarity over completeness**.
 
 ---
 
-# License
-
-No License
