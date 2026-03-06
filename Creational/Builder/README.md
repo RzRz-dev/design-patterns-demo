@@ -16,3 +16,26 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+
+## Example in Java
+
+Scenario
+
+You are building a system that creates different Computer configurations. A computer may have many components, but not all are required.
+
+Computer components
+
+- CPU
+- RAM
+- GPU
+- Storage
+- PowerSupply
+
+Different computers may include different components:
+
+- Office PC → CPU, RAM, Storage
+- Gaming PC → CPU, RAM, GPU, Storage, CoolingSystem
+
+
+Using constructors for this would become messy, so you will implement a Builder Pattern.
