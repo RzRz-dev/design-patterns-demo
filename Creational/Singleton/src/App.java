@@ -1,3 +1,5 @@
+import model.Logger;
+
 public class App {
     public static void main(String[] args) throws Exception {
         /*
@@ -6,5 +8,12 @@ public class App {
         * 
         * In this example a simple logger system is going to be implemented.
         */
+        Logger logger1 = Logger.getInstance();
+        Logger logger2 = Logger.getInstance();
+
+        logger1.log("Application started");
+        logger2.log("User logged in");
+
+        System.out.println("Same instance? " + (logger1 == logger2));
     }
 }
